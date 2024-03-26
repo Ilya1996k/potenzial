@@ -26,6 +26,13 @@ for i in range(len(a)):
         a[i][4] = str(d[a[i][3]])
 
 
+f=open('student_new.csv','w', encoding='utf8' )
+f.writelines('id,Name,titleProject_id,class,score\n')
+for x in a:
+    f.writelines(','.join(x)+'\n')
+f.close()
+
+
 
 
 
