@@ -13,6 +13,7 @@ while 1:
         break
     id = int(id)
     flag = 0
+
     for x in a:
         if x[2] == id:
             f, i, o = x[1].split()
