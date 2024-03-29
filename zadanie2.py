@@ -1,5 +1,6 @@
 a=open('students.csv', encoding='utf8').readlines()
 a.pop(0)
+print(1)
 for i in range(len(a)):
 
     a[i] =a[i].strip().split(',')
