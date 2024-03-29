@@ -2,10 +2,12 @@ a=open('students.csv', encoding='utf8').readlines()
 a.pop(0)
 
 
-
 for i in range(len(a)):
     a[i] =a[i].strip().split(',')
     a[i][2] = int(a[i][2])
+
+
+
 
 while 1:
     id = input()
@@ -13,6 +15,7 @@ while 1:
         break
     id = int(id)
     flag = 0
+
 
     for x in a:
         if x[2] == id:

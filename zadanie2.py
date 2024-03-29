@@ -1,9 +1,11 @@
 a=open('students.csv', encoding='utf8').readlines()
 a.pop(0)
 for i in range(len(a)):
+
     a[i] =a[i].strip().split(',')
     if a[i][-1] =='None':
         a[i][-1] =0
+
     else:
         a[i][-1] = int(a[i][-1])
 
