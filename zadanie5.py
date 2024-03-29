@@ -3,7 +3,9 @@ def hash(s):
     p= 67
     m = 10**9 + 9
     h=0
+
     for i in range(len(s)):
+
         h += A.find(s[i])*p**i
     h = h%m
     return str(h)
