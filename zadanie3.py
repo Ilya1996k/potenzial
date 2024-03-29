@@ -1,5 +1,8 @@
 a=open('students.csv', encoding='utf8').readlines()
 a.pop(0)
+
+
+
 for i in range(len(a)):
     a[i] =a[i].strip().split(',')
     a[i][2] = int(a[i][2])
